@@ -95,6 +95,16 @@
       ],
       "type": "number"
     },
+    "max_call_recv_msg_size": {
+      "title": "Maximum size for messages",
+      "description": "Specifies the maximum size (in bytes) for messages the grpc client is allowed to receive. If the value is unset, or `0`, it uses its default (4MB)",
+      "examples": [
+        33554432,
+        4194304,
+        0
+      ],
+      "type": "number"
+    },
     "request_naming_convention": {
       "title": "Request naming convention",
       "description": "Defines the naming convention used to format the request. Applies to query strings and JSON field names. By default, the gateway uses `snake_case` which makes use of the standard `encoding/json` package, while when you choose `camelCase` the `protobuf/encoding` deserialization is used instead.\n\nSee: https://www.krakend.io/docs/enterprise/backends/grpc/",
