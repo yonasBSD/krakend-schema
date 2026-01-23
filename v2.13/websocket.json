@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/websocket.json",
   "title": "Schema definition for Websockets",
   "description": "Enterprise only. Enables websocket communication.\n\nSee: https://www.krakend.io/docs/enterprise/websockets/",
@@ -42,7 +42,6 @@
       "type": "boolean"
     },
     "input_headers": {
-      "$id": "#websocket/input_headers",
       "title": "Allowed Headers In",
       "description": "Defines which input headers are allowed to pass to the backend. You don't need to declare the `input_headers` at the endpoint. Use `*` to pass all headers (not recommended, use explicit values instead). There are a few headers that won't be propagated regardless of your configuration, which are: `Upgrade`, `Connection`, `Sec-Websocket-Extensions`, `Sec-Websocket-Version`, and `Sec-Websocket-Key`.\n\nSee: https://www.krakend.io/docs/enterprise/websockets/",
       "examples": [

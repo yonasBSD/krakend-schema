@@ -23,28 +23,24 @@
   ],
   "properties": {
     "auto_join_policies": {
-      "$id": "#security/policies/auto_join_policies",
       "title": "Auto-join policies",
       "description": "When true, all policies of the same type concatenate with an AND operation to evaluate a single expression. Performs faster, but its harder the debug.",
       "default": false,
       "type": "boolean"
     },
     "debug": {
-      "$id": "#security/policies/debug",
       "title": "Debug",
       "description": "When true, all the inputs and evaluation results are printed in the console.",
       "default": false,
       "type": "boolean"
     },
     "disable_macros": {
-      "$id": "#security/policies/disable_macros",
       "title": "Disable advanced macros",
       "description": "Advanced macros can be disabled in those policies not needing them for a faster evaluation.",
       "default": false,
       "type": "boolean"
     },
     "jwt": {
-      "$id": "#security/policies/jwt",
       "title": "JWT policies",
       "description": "All the policies applied in the JWT context (token validation). **You must configure `auth/validator`** for the policies to run, otherwise they will be skipped. Any policy failing will generate a `401 Unauthorized` error. Works in the `endpoint` context only, and is not available under `backend`.\n\nSee: https://www.krakend.io/docs/enterprise/security-policies/",
       "type": "object",
@@ -69,7 +65,6 @@
       "additionalProperties": false
     },
     "req": {
-      "$id": "#security/policies/req",
       "title": "Request policies",
       "description": "All the policies applied in the request context.\n\nSee: https://www.krakend.io/docs/enterprise/security-policies/",
       "type": "object",
@@ -117,7 +112,6 @@
       "additionalProperties": false
     },
     "resp": {
-      "$id": "#security/policies/resp",
       "title": "Response policies",
       "description": "All the policies applied in the response context.\n\nSee: https://www.krakend.io/docs/enterprise/security-policies/",
       "type": "object",

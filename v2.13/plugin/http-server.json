@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/plugin/http-server.json",
   "title": "HTTP Server plugins.\n\nSee: https://www.krakend.io/docs/extending/http-server-plugins/",
   "type": "object",
@@ -17,7 +17,6 @@
       "$ref": "jwk-aggregator.json"
     },
     "name": {
-      "$id": "#plugin/http-server",
       "title": "Plugin name",
       "description": "An array with the names of plugins to load. The names are defined inside your plugin.\n\nSee: https://www.krakend.io/docs/extending/http-server-plugins/",
       "examples": [

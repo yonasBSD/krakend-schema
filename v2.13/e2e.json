@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/e2e.json",
   "title": "Schema validation for End To End testing specs",
   "type": "object",
@@ -202,7 +202,7 @@
               "schema": {
                 "title": "JSON Schema",
                 "description": "A JSON Schema object that validates the response. This option allows you to work with responses that the literal value is not that important and you want to check the structure of the returned document instead. If the response matches the schema definition, the test passes. If you define a `schema` and a `body` simultaneously only the schema is validated.",
-                "$ref": "http://json-schema.org/draft-07/schema#",
+                "$ref": "https://json-schema.org/draft/2019-09/schema",
                 "type": "object"
               },
               "status_code": {
@@ -290,7 +290,7 @@
         "schema": {
           "title": "JSON Schema",
           "description": "A JSON Schema object that validates the response. This option allows you to work with responses that the literal value is not that important and you want to check the structure of the returned document instead. If the response matches the schema definition, the test passes. If you define a `schema` and a `body` simultaneously only the schema is validated.",
-          "$ref": "http://json-schema.org/draft-07/schema#",
+          "$ref": "https://json-schema.org/draft/2019-09/schema",
           "type": "object"
         },
         "status_code": {

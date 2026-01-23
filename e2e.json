@@ -8,22 +8,28 @@
       "$schema": "https://www.krakend.io/schema/v2.13/e2e.json",
       "@comment": "Makes sure that the debug endpoint returns a status ok",
       "in": {
-        "method": "GET",
-        "url": "http://localhost:8080/__debug/something",
         "header": {
           "User-Agent": "krakend-e2e-tool"
-        }
+        },
+        "method": "GET",
+        "url": "http://localhost:8080/__debug/something"
       },
       "out": {
-        "status_code": 200,
         "body": {
           "status": "ok"
         },
         "header": {
-          "content-type": [ "application/json; charset=utf-8" ],
-          "X-Krakend-Completed": [ "true" ],
-          "Cache-Control": [ "" ]
-        }
+          "Cache-Control": [
+            ""
+          ],
+          "X-Krakend-Completed": [
+            "true"
+          ],
+          "content-type": [
+            "application/json; charset=utf-8"
+          ]
+        },
+        "status_code": 200
       }
     }
   ],

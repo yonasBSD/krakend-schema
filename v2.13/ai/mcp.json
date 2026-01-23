@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/ai/mcp.json",
   "title": "MCP functionality",
   "description": "MCP functionality.\n\nSee: https://www.krakend.io/docs/enterprise/ai-gateway/mcp-server/",

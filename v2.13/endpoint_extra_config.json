@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/endpoint_extra_config.json",
   "title": "Endpoint extra configuration",
   "type": "object",
@@ -35,7 +35,6 @@
           }
         },
         "strategy": {
-          "$id": "#auth/api-keys/strategy",
           "title": "Strategy",
           "description": "Specifies where to expect the user API key, whether inside a header or as part of the query string. When you change the strategy at the endpoint level, **you should also set the identifier**, otherwise you could have for instance, a query string strategy expecting to have a URL like `/foo?Authorization=YOUR-KEY`.\n\nSee: https://www.krakend.io/docs/enterprise/authentication/api-keys/",
           "enum": [
@@ -120,13 +119,11 @@
       "type": "object"
     },
     "proxy": {
-      "$id": "#endpoint_extra_config/proxy",
       "title": "Proxy",
       "description": "Fine tune different options for the proxy phase of the API request/response flow.",
       "type": "object",
       "properties": {
         "combiner": {
-          "$id": "#endpoint_extra_config/proxy/combiner",
           "title": "Custom combiner",
           "description": "For custom builds of KrakenD only",
           "examples": [
@@ -141,13 +138,12 @@
           "type": "boolean"
         },
         "flatmap_filter": {
-          "$id": "#proxy/flatmap_filter",
           "title": "Flatmap (Array manipulation)",
           "description": "The list of operations to **execute sequentially** (top down). Every operation is defined with an object containing two properties:\n\nSee: https://www.krakend.io/docs/backends/flatmap/",
           "$ref": "proxy/flatmap.json",
           "type": "array",
           "items": {
-            "type": "string"
+            "type": "object"
           }
         },
         "max_payload": {
@@ -157,7 +153,6 @@
           "type": "integer"
         },
         "sequential": {
-          "$id": "#endpoint_extra_config/proxy/sequential",
           "title": "Sequential proxy",
           "description": "When set to true, instead of fetching all backend content in parallel, the calls are made in order (sequentially), allowing you to chain backend requests and making calls dependent one of each other. If any of the calls fail, the remaining ones are aborted.\n\nSee: https://www.krakend.io/docs/endpoints/sequential-proxy/",
           "default": false,
@@ -184,7 +179,6 @@
           }
         },
         "static": {
-          "$id": "#endpoint_extra_config/proxy/static",
           "title": "Static response",
           "description": "The static proxy injects static data in the final response when the selected strategy matches.\n\nSee: https://www.krakend.io/docs/endpoints/static-proxy/",
           "type": "object",
@@ -194,13 +188,11 @@
           ],
           "properties": {
             "data": {
-              "$id": "#endpoint_extra_config/proxy/static/data",
               "title": "Data",
               "description": "The static data (as a JSON object) that you will return.\n\nSee: https://www.krakend.io/docs/endpoints/static-proxy/",
               "type": "object"
             },
             "strategy": {
-              "$id": "#endpoint_extra_config/proxy/static/strategy",
               "title": "Strategy",
               "description": "One of the supported strategies\n\nSee: https://www.krakend.io/docs/endpoints/static-proxy/",
               "enum": [
@@ -267,7 +259,7 @@
     "validation/cel": {
       "description": "The [Common Expression Language (CEL)](https://www.krakend.io/docs/endpoints/common-expression-language-cel/) middleware enables expression evaluation, when an expression returns false, KrakenD does not return the content as the condition has failed. Otherwise, if all expressions returned true, the content is served.",
       "$ref": "validation/cel.json",
-      "type": "object"
+      "type": "array"
     },
     "validation/json-schema": {
       "title": "Validating the body with the JSON Schema",

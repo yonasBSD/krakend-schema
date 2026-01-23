@@ -1,18 +1,16 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/client_tls.json",
   "title": "TLS client settings",
   "description": "TLS options to connect to upstream services.\n\nSee: https://www.krakend.io/docs/service-settings/tls/",
   "properties": {
     "allow_insecure_connections": {
-      "$id": "#client_tls/allow_insecure_connections",
       "title": "Allow insecure connections",
       "description": "By default, KrakenD verifies every SSL connection. This option allows you to connect to backends considered **insecure**, for instance when you are using self-signed certificates",
       "default": false,
       "type": "boolean"
     },
     "ca_certs": {
-      "$id": "#client_tls/ca_certs",
       "title": "CA certificates",
       "description": "An array with all the CA certificates you would like to validate the server you are connecting to.\n\nSee: https://www.krakend.io/docs/service-settings/tls/",
       "examples": [
@@ -84,7 +82,6 @@
       }
     },
     "disable_system_ca_pool": {
-      "$id": "#client_tls/disable_system_ca_pool",
       "title": "Disable system's CA",
       "description": "Ignore any certificate in the system's CA. The only certificates loaded will be the ones in the `ca_certs` list when true.\n\nSee: https://www.krakend.io/docs/service-settings/http-server-settings/",
       "default": false,

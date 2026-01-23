@@ -1,12 +1,11 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/documentation/postman.json",
   "title": "Generate documentation using Postman collections",
   "description": "Enterprise only. Generates postman documentation automatically through `krakend postman export` command.\n\nSee: https://www.krakend.io/docs/enterprise/developer/postman/",
   "type": "object",
   "properties": {
     "description": {
-      "$id": "#documentation/postman/description",
       "title": "API Collection Description",
       "description": "An introductory, optionally verbose, explanation supporting Markdown syntax. If you'd like to load an **external markdown file**, you can use flexible configuration, for instance `\"description\": {{include \"postman/intro.md\" | toJson }}`\n\nSee: https://www.krakend.io/docs/enterprise/developer/postman/",
       "examples": [
@@ -15,7 +14,6 @@
       "type": "string"
     },
     "folder": {
-      "$id": "#documentation/postman/folder",
       "title": "Folder",
       "description": "The folder definition where you will add endpoints",
       "type": "array",
@@ -49,7 +47,6 @@
       }
     },
     "name": {
-      "$id": "#documentation/postman/name",
       "title": "Collection Name",
       "description": "The name of the Postman collection you are generating.\n\nSee: https://www.krakend.io/docs/enterprise/developer/postman/",
       "examples": [
@@ -58,7 +55,6 @@
       "type": "string"
     },
     "version": {
-      "$id": "#documentation/postman/version",
       "title": "Collection Version",
       "description": "The version you assign to this Postman collection you are generating using **semantic versioning**.\n\nSee: https://www.krakend.io/docs/enterprise/developer/postman/",
       "examples": [

@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/redis.json",
   "title": "Redis configuration",
   "description": "Defines the Redis connection pools available to any functionality requiring Redis.\n\nSee: /docs/enterprise/throttling/global-rate-limit/",

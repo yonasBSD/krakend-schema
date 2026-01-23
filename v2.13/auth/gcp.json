@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/auth/gcp.json",
   "title": "GCP Authentication",
   "description": "Enterprise only. Enables GCP authentication between KrakenD and Google Cloud service account.\n\nSee: https://www.krakend.io/docs/enterprise/authentication/gcp/",
@@ -25,7 +25,6 @@
   ],
   "properties": {
     "audience": {
-      "$id": "#auth/gcp/audience",
       "title": "Audience",
       "description": "The audience in GCP looks like an URL, and contains the destination service you will ask a token for. Most of the times this URL will match exactly with the `host` entry.\n\nSee: https://www.krakend.io/docs/enterprise/authentication/gcp/",
       "examples": [
@@ -34,7 +33,6 @@
       "type": "string"
     },
     "credentials_file": {
-      "$id": "#auth/gcp/credentials_file",
       "title": "Path to credentials file",
       "description": "The relative or absolute path to a credentials file in JSON format that contains all the credentials to authenticate API calls to the given service account.\n\nSee: https://www.krakend.io/docs/enterprise/authentication/gcp/",
       "examples": [
@@ -43,7 +41,6 @@
       "type": "string"
     },
     "credentials_json": {
-      "$id": "#auth/gcp/credentials_json",
       "title": "JSON credentials file",
       "description": "An inline JSON object containing all the credentials fields to authenticate to GCP.\n\nSee: https://www.krakend.io/docs/enterprise/authentication/gcp/",
       "examples": [
@@ -63,7 +60,6 @@
       "type": "object"
     },
     "custom_claims": {
-      "$id": "#auth/gcp/custom_claims",
       "title": "Custom claims",
       "description": "Custom private claims that you can optionally add to an ID token.\n\nSee: https://www.krakend.io/docs/enterprise/authentication/gcp/",
       "type": "object"

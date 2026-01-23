@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/telemetry/opentelemetry-backend.json",
   "title": "OpenTelemetry Backend Override",
   "description": "Enterprise only. Overrides metrics and traces declared by the OpenTelemetry service.\n\nSee: https://www.krakend.io/docs/telemetry/opentelemetry-by-endpoint/",

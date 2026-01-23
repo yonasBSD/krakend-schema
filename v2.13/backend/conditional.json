@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/backend/conditional.json",
   "title": "Conditional Routing",
   "description": "Evaluates a rule to determine if the backend is callable or not, and skip to the next one in case it's not.\n\nSee: https://www.krakend.io/docs/enterprise/backends/conditional/",

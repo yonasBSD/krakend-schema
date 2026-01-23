@@ -5,22 +5,31 @@
   "description": "Schema validation for the latest version of Extended Flexible Configuration. Consider sticking to the specific version you are using",
   "examples": [
     {
-      "settings": {
-        "paths": [ "settings" ],
-        "allow_overwrite": true,
-        "dir_field_prefix": "",
-        "allowed_suffixes": [ ".yaml", ".json" ]
-      },
-      "partials": {
-        "paths": [ "partials" ]
-      },
-      "templates": {
-        "paths": [ "templates" ]
-      },
+      "debug": false,
       "meta_key": "meta",
       "out": "result.json",
-      "debug": false,
-      "ref_key": "$ref"
+      "partials": {
+        "paths": [
+          "partials"
+        ]
+      },
+      "ref_key": "$ref",
+      "settings": {
+        "allow_overwrite": true,
+        "allowed_suffixes": [
+          ".yaml",
+          ".json"
+        ],
+        "dir_field_prefix": "",
+        "paths": [
+          "settings"
+        ]
+      },
+      "templates": {
+        "paths": [
+          "templates"
+        ]
+      }
     }
   ],
   "$ref": "v2.13/flexible_config.json"

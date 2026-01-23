@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/async_agent.json",
   "title": "Async Agents",
   "description": "Async agents are routines listening to queues or PubSub systems that react to new events and push data to your backends. Through async agents, you can start a lot of consumers to process your events autonomously.\n\nSee: https://www.krakend.io/docs/async/",
@@ -22,7 +22,6 @@
         }
       },
       "connection": {
-        "$id": "#async_agent/connection",
         "title": "Connection",
         "description": "A key defining all the connection settings between the agent and your messaging system.\n\nSee: https://www.krakend.io/docs/async/",
         "type": "object",
@@ -54,7 +53,6 @@
         }
       },
       "consumer": {
-        "$id": "#async_agent/consumer",
         "title": "Consumer",
         "description": "Defines all the settings for each agent consuming messages.\n\nSee: https://www.krakend.io/docs/async/",
         "required": [
@@ -86,7 +84,6 @@
         }
       },
       "encoding": {
-        "$id": "#backend/encoding",
         "title": "Backend Encoding",
         "description": "Informs KrakenD how to parse the responses of your services.\n\nSee: https://www.krakend.io/docs/backends/supported-encodings/",
         "default": "json",
@@ -113,7 +110,6 @@
         }
       },
       "name": {
-        "$id": "#async_agent/name",
         "title": "Name",
         "description": "A unique name for this agent. KrakenD shows it in the health endpoint and logs and metrics. KrakenD does not check collision names, so make sure each agent has a different name.\n\nSee: https://www.krakend.io/docs/async/",
         "type": "string"

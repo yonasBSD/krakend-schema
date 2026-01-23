@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/modifier/response-headers.json",
   "title": "Response headers modifier",
   "description": "Enterprise only. Allows you to transform response headers declaratively.\n\nSee: https://www.krakend.io/docs/enterprise/service-settings/response-headers-modifier/",

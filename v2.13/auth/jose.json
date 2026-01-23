@@ -1,5 +1,5 @@
 {
-  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/auth/jose.json",
   "title": "Shared JWK cache",
   "description": "Enables global configurations for the HTTP client responsible of downloading and caching the JWK URLs for token validation and signing.",
