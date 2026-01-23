@@ -3481,14 +3481,14 @@
                 "type": "boolean"
               },
               "hide": {
-                "title": "Hide querystring",
-                "description": "Avoids this querystring from showing in the generated documentation",
+                "title": "Hide header",
+                "description": "Avoids this header from showing in the generated documentation",
                 "default": false,
                 "type": "boolean"
               },
               "name": {
                 "title": "Name",
-                "description": "The name of the querystring, as declared in `input_query_strings`",
+                "description": "The name of the header, as declared in `input_headers`",
                 "type": "string"
               }
             },

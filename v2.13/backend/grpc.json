@@ -61,6 +61,16 @@
       },
       "additionalProperties": false
     },
+    "max_call_recv_msg_size": {
+      "title": "Maximum size for messages",
+      "description": "Specifies the maximum size (in bytes) for messages the grpc client is allowed to receive. If the value is unset, or `0`, it uses its default (4MB)",
+      "examples": [
+        33554432,
+        4194304,
+        0
+      ],
+      "type": "number"
+    },
     "output_duration_as_string": {
       "title": "Output duration types as string",
       "description": "Well-known Duration types (`google.protobuf.Duration`) are returned as a struct containing fields with `seconds` and `nanos` fields (flag set to `false`). Setting this flag to `true` transforms the timestamps into a string representation in seconds.\n\nSee: https://www.krakend.io/docs/enterprise/backends/grpc/",
