@@ -20,12 +20,8 @@ jobs:
         run: jsonschema bundle v2.13/_root.json --resolve v2.13 --without-id > v2.13/krakend.json
       - name: Format bundle file
         run: jsonschema fmt v2.13/krakend.json
-      - uses: EndBug/add-and-commit@v9
-        with:
-          # The arguments for the `git add` command (see the paragraph below for more info)
-          # Default: '.'
-          add: 'v2.13/krakend.json'
-          commit: -sS
+      - name: Fail if krakend.json changed
+        run: git diff --exit-code -- v2.13/krakend.json
       - name: Notify JSON schema
         uses: slackapi/slack-github-action@v2.0.0
         if: ${{ github.head_ref == 'main' || github.ref_name == 'main' }} # check the target branch if it's main
