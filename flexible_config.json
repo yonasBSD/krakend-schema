@@ -9,26 +9,17 @@
       "meta_key": "meta",
       "out": "result.json",
       "partials": {
-        "paths": [
-          "partials"
-        ]
+        "paths": [ "partials" ]
       },
       "ref_key": "$ref",
       "settings": {
         "allow_overwrite": true,
-        "allowed_suffixes": [
-          ".yaml",
-          ".json"
-        ],
+        "allowed_suffixes": [ ".yaml", ".json" ],
         "dir_field_prefix": "",
-        "paths": [
-          "settings"
-        ]
+        "paths": [ "settings" ]
       },
       "templates": {
-        "paths": [
-          "templates"
-        ]
+        "paths": [ "templates" ]
       }
     }
   ],

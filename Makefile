@@ -2,7 +2,7 @@
 
 VERSION:="v2.13"
 PREVIOUS_VERSION="v2.12"
-BIN:="docker run -it --rm -v \"${PWD}:/workspace\" ghcr.io/sourcemeta/jsonschema:v7.2.1"
+BIN:="docker run -it --rm -v \"${PWD}:/workspace\" ghcr.io/sourcemeta/jsonschema:v8.0.0"
 
 all: build test
 

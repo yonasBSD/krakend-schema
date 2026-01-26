@@ -4,11 +4,7 @@
   "title": "AMQP Consumer",
   "description": "The AMQP component allows to send and receive messages to and from a queue through the API Gateway.\n\nSee: https://www.krakend.io/docs/backends/amqp-consumer/",
   "type": "object",
-  "required": [
-    "name",
-    "exchange",
-    "routing_key"
-  ],
+  "required": [ "name", "exchange", "routing_key" ],
   "properties": {
     "auto_ack": {
       "title": "Auto ACK",
@@ -43,9 +39,7 @@
     "exchange": {
       "title": "Exchange",
       "description": "The exchange name (must have a **topic** type if already exists).\n\nSee: https://www.krakend.io/docs/backends/amqp-consumer/",
-      "examples": [
-        "some-exchange"
-      ],
+      "examples": [ "some-exchange" ],
       "type": "string"
     },
     "exclusive": {
@@ -90,9 +84,7 @@
     "routing_key": {
       "title": "Routing keys",
       "description": "The list of routing keys you will use to consume messages.\n\nSee: https://www.krakend.io/docs/backends/amqp-consumer/",
-      "examples": [
-        "#"
-      ],
+      "examples": [ "#" ],
       "type": "array",
       "items": {
         "type": "string"
