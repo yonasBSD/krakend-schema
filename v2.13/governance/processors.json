@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/governance/processors.json",
-  "title": "Governance processors.",
+  "title": "Governance processors",
   "description": "Declares rules and limits to be enforced.",
   "type": "object",
   "required": [ "quotas" ],
@@ -70,7 +70,7 @@
               "P": {
                 "title": "Probability",
                 "description": "The `P`robability of returning a false positive. E.g.,`1e-7` for one false positive every 10 million different tokens. The values `N` and `P` determine the size of the resulting bloom filter to fulfill your expectations. E.g: 0.0000001\n\nSee: https://www.krakend.io/docs/authorization/revoking-tokens/\n\nSee: https://www.krakend.io/docs/enterprise/governance/quota/",
-                "examples": [ 1e-07, 1e-07 ],
+                "examples": [ 1e-7 ],
                 "type": "number"
               },
               "cleanup_interval": {
@@ -87,7 +87,7 @@
               }
             },
             "patternProperties": {
-              "^[@$_#]": {}
+              "^[@$_#]": true
             },
             "additionalProperties": false
           },
@@ -135,7 +135,7 @@
                       }
                     },
                     "patternProperties": {
-                      "^[@$_#]": {}
+                      "^[@$_#]": true
                     },
                     "additionalProperties": false
                   }
@@ -147,21 +147,21 @@
                 }
               },
               "patternProperties": {
-                "^[@$_#]": {}
+                "^[@$_#]": true
               },
               "additionalProperties": false
             }
           }
         },
         "patternProperties": {
-          "^[@$_#]": {}
+          "^[@$_#]": true
         },
         "additionalProperties": false
       }
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

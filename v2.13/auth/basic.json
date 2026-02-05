@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/auth/basic.json",
+  "title": "Basic Authentication",
   "description": "Enterprise only. The Basic Authentication component protects the access to selected endpoints using basic username and password credentials.\n\nSee: https://www.krakend.io/docs/enterprise/authentication/basic-authentication/",
   "type": "object",
   "properties": {
@@ -29,7 +30,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

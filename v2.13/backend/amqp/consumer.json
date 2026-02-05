@@ -84,7 +84,9 @@
     "routing_key": {
       "title": "Routing keys",
       "description": "The list of routing keys you will use to consume messages.\n\nSee: https://www.krakend.io/docs/backends/amqp-consumer/",
-      "examples": [ "#" ],
+      "examples": [
+        [ "#" ]
+      ],
       "type": "array",
       "items": {
         "type": "string"
@@ -92,7 +94,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

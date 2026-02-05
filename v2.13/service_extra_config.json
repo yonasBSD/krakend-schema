@@ -97,7 +97,7 @@
           "uniqueItems": true,
           "items": {
             "title": "Object in array",
-            "description": "\n\nSee: https://www.krakend.io",
+            "description": "See: https://www.krakend.io",
             "enum": [
               "GET",
               "HEAD",
@@ -184,7 +184,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

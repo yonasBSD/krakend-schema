@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/modifier/jmespath.json",
-  "title": " JMESPath: Response manipulation with query language",
+  "title": "JMESPath: Response manipulation with query language",
   "description": "Enterprise only. The JMESPath query language allows you to select, slice, filter, map, project, flatten, sort, and all sorts of operations on data.\n\nSee: https://www.krakend.io/docs/enterprise/endpoints/jmespath/",
   "type": "object",
   "required": [ "expr" ],
@@ -13,7 +13,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

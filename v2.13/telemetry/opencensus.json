@@ -30,7 +30,7 @@
         }
       },
       "patternProperties": {
-        "^[@$_#]": {}
+        "^[@$_#]": true
       },
       "additionalProperties": false
     },
@@ -104,7 +104,7 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -147,7 +147,7 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -189,7 +189,7 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -212,7 +212,7 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -264,7 +264,7 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -311,7 +311,7 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -346,7 +346,7 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -371,7 +371,7 @@
           "properties": {
             "access_key_id": {
               "title": "AWS access key id",
-              "description": " Your access key ID provided by Amazon. Needed when `use_env` is unset or set to false.\n\nSee: https://www.krakend.io/docs/telemetry/xray/",
+              "description": "Your access key ID provided by Amazon. Needed when `use_env` is unset or set to false.\n\nSee: https://www.krakend.io/docs/telemetry/xray/",
               "type": "string"
             },
             "region": {
@@ -399,7 +399,7 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -423,13 +423,13 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         }
       },
       "patternProperties": {
-        "^[@$_#]": {}
+        "^[@$_#]": true
       },
       "additionalProperties": false
     },
@@ -449,7 +449,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

@@ -32,7 +32,7 @@
         }
       },
       "patternProperties": {
-        "^[@$_#]": {}
+        "^[@$_#]": true
       },
       "additionalProperties": false
     },
@@ -43,7 +43,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

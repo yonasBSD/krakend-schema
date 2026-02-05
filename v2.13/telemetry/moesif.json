@@ -55,7 +55,7 @@
         }
       },
       "patternProperties": {
-        "^[@$_#]": {}
+        "^[@$_#]": true
       },
       "additionalProperties": false
     },
@@ -126,7 +126,6 @@
       "examples": [
         "( req_method=='GET' || req_path.startsWith('/bar/')) && hasHeader('X-Something')"
       ],
-      "default": [],
       "type": "string"
     },
     "timer_wake_up_seconds": {
@@ -155,7 +154,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }
