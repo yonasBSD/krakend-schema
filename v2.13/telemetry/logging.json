@@ -26,7 +26,7 @@
       "title": "Access log format",
       "description": "Enterprise only. Enable a formatter for the access log. You can write your own pattern using the `custom` value, or you can use one of the predefined ones.\n\nSee: https://www.krakend.io/docs/logging/",
       "default": "",
-      "enum": [ "default", "httpdCommon", "httpdCombine", "json", "custom" ]
+      "enum": [ "", "default", "httpdCommon", "httpdCombine", "json", "custom" ]
     },
     "access_log_missing_key_marker": {
       "title": "Access log format missing key",
@@ -89,7 +89,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

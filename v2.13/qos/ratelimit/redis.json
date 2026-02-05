@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2019-09/schema",
   "$id": "https://www.krakend.io/schema/v2.13/qos/ratelimit/redis.json",
+  "title": "Redis-backed Rate Limit",
   "description": "Enterprise only. Redis-backed service ratelimit",
   "type": "object",
   "anyOf": [

@@ -14,12 +14,14 @@
     "allow_headers": {
       "title": "Allowed headers",
       "description": "An array with the headers allowed, but `Origin`is always appended to the list. Requests with headers not in this list are rejected.\n\nSee: https://www.krakend.io/docs/service-settings/cors/",
+      "examples": [
+        [ "Accept-Language" ]
+      ],
       "default": [],
       "type": "array",
       "items": {
         "type": "string"
-      },
-      "example": [ "Accept-Language" ]
+      }
     },
     "allow_methods": {
       "title": "Allowed methods",
@@ -82,7 +84,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

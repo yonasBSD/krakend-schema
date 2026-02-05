@@ -150,7 +150,7 @@
     },
     "header.Append": {
       "title": "Append a header",
-      "description": "\n\nSee: https://www.krakend.io/docs/backends/martian/",
+      "description": "See: https://www.krakend.io/docs/backends/martian/",
       "type": "object",
       "required": [ "scope", "name", "value" ],
       "properties": {
@@ -260,7 +260,7 @@
     },
     "header.Id": {
       "title": "Header Id",
-      "description": "\n\nSee: https://www.krakend.io/docs/backends/martian/",
+      "description": "See: https://www.krakend.io/docs/backends/martian/",
       "type": "object",
       "required": [ "scope" ],
       "properties": {

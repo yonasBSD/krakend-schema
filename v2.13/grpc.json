@@ -10,9 +10,7 @@
       "title": "Catalog definition",
       "description": "The paths to the different `.pb` files you want to load, or the paths to directories containing `.pb` files. All content is scanned in the order of the list, and after fetching all files it resolves the dependencies of their imports. The order you use here is not important to resolve imports, but it matters when there are conflicts (different files using the same namespace and package type).\n\nSee: https://www.krakend.io/docs/enterprise/grpc/server/",
       "examples": [
-        "./grpc/flights.pb",
-        "./grpc/definitions",
-        "/etc/krakend/grpc"
+        [ "./grpc/flights.pb", "./grpc/definitions", "/etc/krakend/grpc" ]
       ],
       "type": "array",
       "items": {
@@ -43,7 +41,7 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -84,14 +82,17 @@
                         }
                       },
                       "patternProperties": {
-                        "^[@$_#]": {}
+                        "^[@$_#]": true
                       },
                       "additionalProperties": false
                     },
                     "input_headers": {
                       "title": "Allowed Headers In",
                       "description": "Defines the list of all client headers that you can use as gRPC metadata.\nBy default, KrakenD won't pass any header from the client to the backend. This list is **case-insensitive**. You can declare headers in lowercase, uppercase, or mixed.\nAn entry `[\"X-Something\"]` forwards a single `X-Something` header to the backend, ignoring everything else. A single star element `[\"*\"]` as value forwards everything to the backend (**it's safer to avoid this option**).",
-                      "examples": [ "X-Custom-Trace", "*" ],
+                      "examples": [
+                        [ "X-Custom-Trace" ],
+                        [ "*" ]
+                      ],
                       "default": [],
                       "type": "array",
                       "uniqueItems": true,
@@ -116,7 +117,7 @@
                     }
                   },
                   "patternProperties": {
-                    "^[@$_#]": {}
+                    "^[@$_#]": true
                   },
                   "additionalProperties": false
                 }
@@ -129,20 +130,20 @@
               }
             },
             "patternProperties": {
-              "^[@$_#]": {}
+              "^[@$_#]": true
             },
             "additionalProperties": false
           }
         }
       },
       "patternProperties": {
-        "^[@$_#]": {}
+        "^[@$_#]": true
       },
       "additionalProperties": false
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

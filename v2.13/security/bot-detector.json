@@ -9,7 +9,9 @@
     "allow": {
       "title": "Allow",
       "description": "An array with EXACT MATCHES of trusted user agents that can connect.\n\nSee: https://www.krakend.io/docs/throttling/botdetector/",
-      "examples": [ "MyAndroidClient/1.0", "Pingdom.com_bot_version_1.1" ],
+      "examples": [
+        [ "MyAndroidClient/1.0", "Pingdom.com_bot_version_1.1" ]
+      ],
       "default": [],
       "type": "array",
       "items": {
@@ -25,7 +27,9 @@
     "deny": {
       "title": "Deny",
       "description": "An array with EXACT MATCHES of undesired bots, to reject immediately.\n\nSee: https://www.krakend.io/docs/throttling/botdetector/",
-      "examples": [ "facebookexternalhit/1.1" ],
+      "examples": [
+        [ "facebookexternalhit/1.1" ]
+      ],
       "default": [],
       "type": "array",
       "items": {
@@ -41,7 +45,9 @@
     "patterns": {
       "title": "Bot patterns",
       "description": "An array with all the regular expressions that define bots. Matching bots are rejected.\n\nSee: https://www.krakend.io/docs/throttling/botdetector/",
-      "examples": [ "GoogleBot.*", "(facebookexternalhit)/.*" ],
+      "examples": [
+        [ "GoogleBot.*", "(facebookexternalhit)/.*" ]
+      ],
       "default": [],
       "type": "array",
       "items": {
@@ -50,7 +56,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

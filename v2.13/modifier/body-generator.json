@@ -3,6 +3,7 @@
   "$id": "https://www.krakend.io/schema/v2.13/modifier/body-generator.json",
   "title": "Template-based body generator",
   "description": "Enterprise only. Crafts the body/payload using a templating system.\n\nSee: https://www.krakend.io/backends/body-generator/",
+  "$comment": "This schema is used by modifier/request-body-generator and modifier/body-generator simultaneously",
   "type": "object",
   "oneOf": [
     {
@@ -39,8 +40,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
-  "additionalProperties": false,
-  "@comment": "This schema is used by modifier/request-body-generator and modifier/body-generator simultaneously"
+  "additionalProperties": false
 }

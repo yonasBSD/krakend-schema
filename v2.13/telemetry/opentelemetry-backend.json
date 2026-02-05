@@ -64,15 +64,15 @@
                     "type": "string"
                   }
                 },
-                "additionalproperties": false,
-                "patternproperties": {
-                  "^[@$_#]": {}
-                }
+                "patternProperties": {
+                  "^[@$_#]": true
+                },
+                "additionalProperties": false
               }
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -136,27 +136,27 @@
                     "type": "string"
                   }
                 },
-                "additionalproperties": false,
-                "patternproperties": {
-                  "^[@$_#]": {}
-                }
+                "patternProperties": {
+                  "^[@$_#]": true
+                },
+                "additionalProperties": false
               }
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         }
       },
       "patternProperties": {
-        "^[@$_#]": {}
+        "^[@$_#]": true
       },
       "additionalProperties": false
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

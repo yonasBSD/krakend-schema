@@ -113,13 +113,13 @@
                 },
                 "workflow": {
                   "title": "Workflow",
-                  "description": "This is the action/pipeline performed by the tool. While you can add a single action to the tool, because actions can be chained and have complex logic, we have called this a workflow, whether is connecting to a single remote service, many, aggreggating, or any other functionality supported by KrakenD. See the [Workflow syntax](https://www.krakend.io/docs/enterprise/endpoints/workflows/) ",
+                  "description": "This is the action/pipeline performed by the tool. While you can add a single action to the tool, because actions can be chained and have complex logic, we have called this a workflow, whether is connecting to a single remote service, many, aggreggating, or any other functionality supported by KrakenD. See the [Workflow syntax](https://www.krakend.io/docs/enterprise/endpoints/workflows/)",
                   "$ref": "../workflow.json",
                   "type": "object"
                 }
               },
               "patternProperties": {
-                "^[@$_#]": {}
+                "^[@$_#]": true
               },
               "additionalProperties": false
             }
@@ -132,7 +132,7 @@
           }
         },
         "patternProperties": {
-          "^[@$_#]": {}
+          "^[@$_#]": true
         },
         "additionalProperties": false
       }

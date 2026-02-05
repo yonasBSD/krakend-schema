@@ -40,7 +40,7 @@
       "type": "array",
       "items": {
         "title": "Object in array",
-        "description": "\n\nSee: https://www.krakend.io/docs/authorization/jwt-signing/",
+        "description": "See: https://www.krakend.io/docs/authorization/jwt-signing/",
         "enum": [
           5,
           10,
@@ -105,14 +105,16 @@
     },
     "jwk_url": {
       "title": "JWK URL",
-      "description": " The URL to the JWK endpoint with the private keys used to sign the token.\n\nSee: https://www.krakend.io/docs/authorization/jwt-signing/",
+      "description": "The URL to the JWK endpoint with the private keys used to sign the token.\n\nSee: https://www.krakend.io/docs/authorization/jwt-signing/",
       "examples": [ "http://your-backend/jwk/symmetric.json" ],
       "type": "string"
     },
     "keys_to_sign": {
       "title": "Keys to sign",
       "description": "List of all the specific keys that need signing (e.g., `refresh_token` and `access_token`).\n\nSee: https://www.krakend.io/docs/authorization/jwt-signing/",
-      "examples": [ "access_token", "refresh_token" ],
+      "examples": [
+        [ "access_token", "refresh_token" ]
+      ],
       "type": "array",
       "items": {
         "type": "string"
@@ -147,7 +149,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

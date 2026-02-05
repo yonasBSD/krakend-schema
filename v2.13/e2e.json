@@ -40,25 +40,31 @@
         }
       },
       "patternProperties": {
-        "^[@$_#]": {}
+        "^[@$_#]": true
       },
       "additionalProperties": false
     },
     "next": {
       "description": "Additional checks, in sequential order, of `in` and `out` definitions. The outter `in` and `out` are always executed first.",
       "examples": [
-        {
-          "next": [
-            {
-              "in": {},
-              "out": {}
+        [
+          {
+            "in": {
+              "url": "http://localhost/__health"
             },
-            {
-              "in": {},
-              "out": {}
+            "out": {
+              "status_code": 200
             }
-          ]
-        }
+          },
+          {
+            "in": {
+              "url": "http://localhost:8080/foo"
+            },
+            "out": {
+              "status_code": 500
+            }
+          }
+        ]
       ],
       "type": "array",
       "items": {
@@ -100,7 +106,7 @@
               }
             },
             "patternProperties": {
-              "^[@$_#]": {}
+              "^[@$_#]": true
             },
             "additionalProperties": false
           },
@@ -160,13 +166,13 @@
               }
             },
             "patternProperties": {
-              "^[@$_#]": {}
+              "^[@$_#]": true
             },
             "additionalProperties": false
           }
         },
         "patternProperties": {
-          "^[@$_#]": {}
+          "^[@$_#]": true
         },
         "additionalProperties": false
       }
@@ -227,13 +233,13 @@
         }
       },
       "patternProperties": {
-        "^[@$_#]": {}
+        "^[@$_#]": true
       },
       "additionalProperties": false
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

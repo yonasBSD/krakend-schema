@@ -71,7 +71,7 @@
               }
             },
             "patternProperties": {
-              "^[@$_#]": {}
+              "^[@$_#]": true
             },
             "additionalProperties": false
           }
@@ -129,14 +129,14 @@
               }
             },
             "patternProperties": {
-              "^[@$_#]": {}
+              "^[@$_#]": true
             },
             "additionalProperties": false
           }
         }
       },
       "patternProperties": {
-        "^[@$_#]": {}
+        "^[@$_#]": true
       },
       "additionalProperties": false
     },
@@ -202,7 +202,7 @@
         }
       },
       "patternProperties": {
-        "^[@$_#]": {}
+        "^[@$_#]": true
       },
       "additionalProperties": false
     },
@@ -271,14 +271,14 @@
                       }
                     },
                     "patternProperties": {
-                      "^[@$_#]": {}
+                      "^[@$_#]": true
                     },
                     "additionalProperties": false
                   }
                 }
               },
               "patternProperties": {
-                "^[@$_#]": {}
+                "^[@$_#]": true
               },
               "additionalProperties": false
             },
@@ -354,20 +354,20 @@
                       }
                     },
                     "patternProperties": {
-                      "^[@$_#]": {}
+                      "^[@$_#]": true
                     },
                     "additionalProperties": false
                   }
                 }
               },
               "patternProperties": {
-                "^[@$_#]": {}
+                "^[@$_#]": true
               },
               "additionalProperties": false
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -447,7 +447,7 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         },
@@ -516,13 +516,13 @@
             }
           },
           "patternProperties": {
-            "^[@$_#]": {}
+            "^[@$_#]": true
           },
           "additionalProperties": false
         }
       },
       "patternProperties": {
-        "^[@$_#]": {}
+        "^[@$_#]": true
       },
       "additionalProperties": false
     },
@@ -545,7 +545,9 @@
     "skip_paths": {
       "title": "Skip Paths",
       "description": "The paths you don't want to report. Use the literal value used in the `endpoint` definition, including any `{placeholders}`. In the `global` layer, this attribute works only on metrics, because traces are initiated before there is an endpoint to match against. If you do not want any path skipped, just add an array with an empty string `[\"\"]`.\n\nSee: https://www.krakend.io/docs/telemetry/opentelemetry/",
-      "examples": [ "/foo/{bar}" ],
+      "examples": [
+        [ "/foo/{bar}" ]
+      ],
       "default": [ "/__health", "/__debug/", "/__echo/", "/__stats/" ],
       "type": "array",
       "items": {
@@ -563,7 +565,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }

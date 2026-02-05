@@ -70,7 +70,7 @@
       "type": "array",
       "items": {
         "title": "Object in array",
-        "description": "\n\nSee: https://www.krakend.io/docs/authorization/jwt-validation/",
+        "description": "See: https://www.krakend.io/docs/authorization/jwt-validation/",
         "enum": [
           5,
           10,
@@ -196,7 +196,7 @@
     },
     "roles": {
       "title": "Roles",
-      "description": " When set, the JWT token not having at least one of the listed roles is rejected.\n\nSee: https://www.krakend.io/docs/authorization/jwt-validation/",
+      "description": "When set, the JWT token not having at least one of the listed roles is rejected.\n\nSee: https://www.krakend.io/docs/authorization/jwt-validation/",
       "type": "array",
       "items": {
         "type": "string"
@@ -247,7 +247,7 @@
     }
   },
   "patternProperties": {
-    "^[@$_#]": {}
+    "^[@$_#]": true
   },
   "additionalProperties": false
 }
